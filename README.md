@@ -1,277 +1,132 @@
-# Awesome-Industrial-IoT-Data-Collection-Modeling
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Industrial IoT Data Collection & Asset Modeling" width="100%">
+</p>
 
-## Top Industrial IoT Data Collection & Modeling Ecosystem
+# 🏭 Awesome Industrial IoT Data Collection & Asset Modeling 🚀
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![IIoT Ecosystem](https://img.shields.io/badge/IIoT-Ecosystem-00f2fe.svg)](https://github.com/ishandutta2007/Awesome-Industrial-IoT-Data-Collection-Modeling)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Industrial Data Acquisition, Asset Modeling & Self-Hosted IIoT Platforms*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial industrial IoT data collection and modeling platforms** and **open-source projects** that acquire sensor data from PLCs, SCADA systems, and industrial equipment, then model assets hierarchically for analytics and digital twins.
-
-
-
-**Examples** include AWS IoT SiteWise, PTC ThingWorx, AVEVA Insight, Litmus Edge, Cognite Data Fusion, Rockwell FactoryTalk, GE Digital Predix, Siemens MindSphere, Uptake, and Sight Machine (the category leaders).
-
-
-
-**Open-source emphasis**: Industrial IoT data collection is a strong open-source domain. **OpenTwins** leads as a next-gen development framework for composing Digital Twins with 3D visualization, ML models, and real-time data acquisition . **Apache StreamPipes** provides a self-service industrial IoT toolbox enabling non-technical users to connect, analyze, and explore IoT data streams . **Apache PLC4X** delivers a universal protocol adapter for industrial PLCs — unifying Modbus, S7, OPC UA, EtherNet/IP, and more . **ThingSPIN** brings a Digital Twin-as-a-Service platform with semantic models and NGSI-LD compliance . **Eclipse Ditto** provides production-grade digital twin abstraction with 60+ device integration scenarios . **Eclipse Hono** handles large-scale device connectivity across MQTT, AMQP, and CoAP . **Eclipse Kura** delivers edge gateway services including Modbus and OPC-UA . **OpenIoE** supports Unified Namespace and Sparkplug B for MQTT-based industrial data . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS IoT SiteWise](https://aws.amazon.com/iot-sitewise/)**  
-
-  **AWS's industrial IoT data platform** — collect, organize, and analyze data from industrial equipment at scale . **Asset modeling with hierarchical equipment relationships** — model factories, production lines, and individual machines . **Built-in metrics and transforms** for real-time calculations without coding . **SiteWise Edge** for on-premises data collection and processing . **Best for AWS-native industrial data collection** .
-
-
-
-- **[PTC ThingWorx](https://www.ptc.com/en/products/thingworx)**  
-
-  **Industrial IoT platform** — model industrial assets, collect data, and build applications . **ThingWorx Kepware** for industrial connectivity to PLCs and SCADA . **Best for industrial IoT application development** .
-
-
-
-- **[AVEVA Insight](https://www.aveva.com/)**  
-
-  **Cloud-based industrial data visualization and analytics** — dashboards for operational data . **Best for process industry monitoring** .
-
-
-
-- **[Litmus Edge](https://litmus.io/)**  
-
-  **Industrial edge platform** — collect data from any industrial device and normalize it for cloud analytics . **200+ industrial drivers** with edge computing and store-and-forward . **Best for industrial data collection at the edge** .
-
-
-
-- **[Cognite Data Fusion](https://www.cognite.com/)**  
-
-  **Industrial DataOps platform** — contextually enrich industrial data with asset models and relationships . **Best for industrial data contextualization** .
-
-
-
-- **[Rockwell FactoryTalk](https://www.rockwellautomation.com/)**  
-
-  **Industrial automation and information platform** — data collection from Rockwell control systems . **Best for Rockwell-centric facilities** .
-
-
-
-- **[GE Digital Predix](https://www.ge.com/digital/)**  
-
-  **Industrial IoT platform** — asset performance and predictive maintenance . **Note**: Predix has been largely retired and integrated into other GE Digital products . **Best for GE Digital ecosystem** .
-
-
-
-- **[Siemens MindSphere](https://www.siemens.com/)**  
-
-  **Industrial IoT operating system** — connect products, plants, systems, and machines . **Note**: MindSphere has been consolidated into Siemens Insights Hub . **Best for Siemens-centric industrial operations** .
-
-
-
-- **[Sight Machine](https://sightmachine.com/)**  
-
-  **Manufacturing analytics platform** — factory data collection and AI-powered insights . **Best for discrete and process manufacturing** .
-
-
-
-- **[Uptake](https://www.uptake.com/)**  
-
-  **Industrial AI platform** — asset reliability and predictive maintenance . **Best for heavy industry** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Digital Twin & Modeling Frameworks
-
-
-
-- **[OpenTwins](https://github.com/ertis-research/opentwins)**  
-
-  **Next-generation development framework for composing Digital Twins**, Apache-2.0 licensed . **Toolbox for orchestrating real-time 3D visualization, ML models, and data acquisition from IoT devices** . **Two deployment modes**: Swarm-based production deployment and Docker Compose single-server demo . **Core services**: PostgreSQL with TimescaleDB for time-series, Redis as message broker, K3s for orchestration, 3D visualization dashboard (Three.js), complex event processing (Flink), ML model serving, and DataHub for historical data . **Poseidon component** simplifies 3D digital twin generation with declarative YAML definitions and automatic MQTT/WS data binding to 3D nodes . **OpenTwins Async** decouples HTTP and MQTT for production use . **Best for composable digital twins with 3D visualization and ML** .
-
-
-
-- **[ThingSPIN](https://github.com/opensource-spin/thingspin)**  
-
-  **Digital Twin-as-a-Service platform for industrial environments**, open-source . **Semantic-based approach with NGSI-LD compliance** — full support for Smart Data Models and OPC-UA to NGSI-LD conversion . **Event-driven architecture** with RabbitMQ for inter-service communication . **Web dashboards** for managing Digital Twins, visualizing sensor data, and making predictions . **Modular microservices**: DB Manager, Semantic Broker, IoT Adapter, Machine Learning Engine, Server, Worker . **Kafka and RabbitMQ messaging support** for scalable event handling . **Best for semantic Digital Twins with NGSI-LD** .
-
-
-
-- **[Eclipse Ditto](https://github.com/eclipse-ditto/ditto)**  
-
-  **Production-grade Digital Twin framework**, EPL-2.0 licensed . **Abstracts physical devices into digital twins with a uniform API** — "digital twin as a service" . **60+ device integration scenarios** including HTTP, MQTT, AMQP, Kafka, and custom connections . **Thing model-based data validation** with JSON schema definitions . **Change notifications** for reactive applications . **Horizontal scaling with MongoDB persistence and cluster-safe search** . **Best for enterprise digital twin abstraction** .
-
-
-
-### Industrial Data Collection & Protocol Adapters
-
-
-
-- **[Apache PLC4X](https://github.com/apache/plc4x)**  
-
-  **Universal protocol adapter for industrial PLCs**, Apache-2.0 licensed . **Unifies 20+ industrial protocols** — Modbus, S7, OPC UA, EtherNet/IP, BACnet, KNX, CAN, Profinet, and more . **Single API for all PLC types** — "one API to access them all" . **Java, Python, C++, .NET, and Go bindings** . **Reads and writes to PLCs with type-safe access** . **The de facto open-source industrial protocol adapter** . **Best for multi-protocol industrial data collection** .
-
-
-
-- **[Apache StreamPipes](https://github.com/apache/streampipes)**  
-
-  **Self-service industrial IoT toolbox**, Apache-2.0 licensed . **Enables non-technical users to connect, analyze, and explore IoT data streams** . **Drag-and-drop pipeline editor** with 100+ data processors and sinks . **Supports Kafka, MQTT, OPC-UA, PLC4X, and more** . **Online machine learning with anomaly detection** . **Best for citizen data scientists in industrial environments** .
-
-
-
-- **[Eclipse Hono](https://github.com/eclipse-hono/hono)**  
-
-  **Large-scale device connectivity platform**, EPL-2.0 licensed . **Connects millions of devices to backend systems** via MQTT, AMQP, CoAP, and HTTP . **Protocol adapters normalize device messages** for uniform downstream processing . **Integration with Eclipse Ditto for digital twins** . **Best for massive-scale device connectivity** .
-
-
-
-- **[Eclipse Kura](https://github.com/eclipse-kura/kura)**  
-
-  **Edge gateway framework for industrial IoT**, EPL-2.0 licensed . **Provides Modbus, OPC-UA, MQTT, and other industrial protocol support** . **Runs on edge gateways and single-board computers** . **Web UI for gateway configuration and monitoring** . **Best for edge-to-cloud industrial data collection** .
-
-
-
-- **[OpenIoE](https://github.com/OpenIoE/openioe)**  
-
-  **Industrial IoT framework supporting Unified Namespace and Sparkplug B**, open-source . **MQTT-based Unified Namespace** with Sparkplug B payload compliance . **Data modeling with asset hierarchies** . **Best for UNS-based industrial data architectures** .
-
-
-
-### Time-Series & Data Storage
-
-
-
-- **[Apache IoTDB](https://github.com/apache/iotdb)**  
-
-  **IoT-native time-series database**, Apache-2.0 licensed with **5,000+ GitHub stars** . **Optimized for industrial IoT with high-throughput ingestion** . **Built-in caching, stream processing, and data subscription** . **Best for industrial time-series storage** .
-
-
-
-- **[TDengine](https://github.com/taosdata/TDengine)**  
-
-  **Purpose-built time-series database for IoT**, AGPL-3.0 licensed with **23,000+ GitHub stars** . **High-performance ingestion and compression** . **Best for IoT and industrial telemetry** .
-
-
-
-- **[InfluxDB](https://github.com/influxdata/influxdb)**  
-
-  **The leading open-source time-series database**, MIT licensed with **29,000+ GitHub stars** . **InfluxQL and Flux query languages** . **Built-in downsampling and retention policies** . **Best for industrial observability** .
-
-
-
-- **[TimescaleDB](https://github.com/timescale/timescaledb)**  
-
-  **PostgreSQL-based time-series database**, Apache-2.0/Timescale License . **Full SQL with time-series hyperfunctions** . **Best for PostgreSQL users needing industrial time-series** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **OpenTwins** — Digital twin framework with 3D visualization and ML .
-
-- **ThingSPIN** — NGSI-LD compliant digital twin platform .
-
-- **Eclipse Ditto** — Production-grade digital twin abstraction .
-
-- **Apache PLC4X** — Universal industrial protocol adapter .
-
-- **Apache StreamPipes** — Self-service industrial IoT toolbox .
-
-- **Eclipse Hono** — Large-scale device connectivity .
-
-- **Eclipse Kura** — Edge gateway framework .
-
-- **OpenIoE** — Unified Namespace and Sparkplug B .
-
-- **Apache IoTDB** — IoT-native time-series database .
-
-- **TDengine** — High-performance time-series database .
-
-- **Node-RED** — Flow-based programming for industrial IoT .
-
-- **OPC UA implementations** — open62541 (C), Milo (Java), asyncua (Python) .
-
-- **Modbus libraries** — pymodbus, libmodbus, ModbusPal .
-
-- **EdgeX Foundry** — Vendor-neutral IoT edge platform .
-
-
-
-**Frameworks for building custom industrial IoT data collection and modeling solutions**: Combine **Apache PLC4X** for universal PLC protocol connectivity . Use **Apache StreamPipes** for self-service industrial data pipelines . Deploy **Eclipse Ditto** or **ThingSPIN** for digital twin modeling and asset abstraction . Integrate **OpenTwins** for composable digital twins with 3D visualization and ML . Choose **Eclipse Hono** for massive-scale device connectivity and **Eclipse Kura** for edge gateway services . Use **Apache IoTDB** or **TDengine** for industrial time-series storage . Implement **OpenIoE** for Unified Namespace and Sparkplug B architectures . Note that true enterprise industrial IoT with managed infrastructure, industrial-grade connectors, and vendor-supported SLAs (AWS IoT SiteWise, PTC ThingWorx, Litmus Edge) remains primarily commercial territory; open-source stacks provide strong protocol adapters, digital twin frameworks, and data pipelines that require integration for complete industrial IoT data collection and modeling.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Industrial IoT platforms handle sensitive operational data and may control physical equipment. Self-hosted solutions require proper security hardening, access controls, and compliance with industrial safety standards (IEC 62443).
-
-- **OT networks are increasingly targeted** — industrial IoT deployments must implement network segmentation, zero-trust access, and continuous monitoring . Never expose industrial protocols directly to the internet .
-
-- **OpenTwins deployment**: Swarm-based for production, Docker Compose for single-server demos . **ThingSPIN** requires RabbitMQ and Kafka for event-driven architecture . **Eclipse Ditto** scales with MongoDB and cluster-safe search .
-
-- **Apache PLC4X** unifies 20+ protocols but industrial environments require careful network configuration and device-specific tuning .
-
-- **License considerations**: OpenTwins uses Apache-2.0, ThingSPIN is open-source, Eclipse Ditto uses EPL-2.0, Apache PLC4X uses Apache-2.0, Apache StreamPipes uses Apache-2.0, and Eclipse Hono uses EPL-2.0 . Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong protocol adapters, digital twin frameworks, and data pipelines, but **managed infrastructure, industrial-grade connectors, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+A curated list of **commercial SaaS platforms** and **open-source GitHub software** for **Industrial IoT (IIoT)** data acquisition, PLC/SCADA telemetry extraction, hierarchical asset modeling, Digital Twins, and Unified Namespace (UNS) architectures.
 
 ---
 
+## 📑 Table of Contents
+- [🌐 Market Size & Industry Structure](#-market-size--industry-structure)
+- [💼 SaaS & Commercial Platforms](#-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⏱️ Time-Series & Data Storage](#%EF%B8%8F-time-series--data-storage)
+  - [🔄 Workflow & Edge Automation](#-workflow--edge-automation)
+  - [🔌 Protocol Adapters & SCADA Integration](#-protocol-adapters--scada-integration)
+  - [🏢 Digital Twin & Asset Modeling Frameworks](#-digital-twin--asset-modeling-frameworks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Operational Safety](#%EF%B8%8F-disclaimer--operational-safety)
 
+---
 
-**Made for industrial engineers, IIoT architects, and organizations seeking industrial IoT data sovereignty.**
+## 🌐 Market Size & Industry Structure 📊
 
-Let's make industrial IoT data collection and modeling more open, transparent, and interoperable.
+> 📈 **Market Size**: The global **Industrial IoT (IIoT)** market size was valued at **$320 Billion in 2023** and is projected to reach **$1.1 Trillion by 2032**, expanding at a CAGR of **14.5%**. 
+>
+> 🧩 **Industry Structure**: The IIoT market is **moderately fragmented**. Heavyweight industrial tech conglomerates (GE, Siemens, Rockwell, AVEVA, PTC) and hyper-scaler cloud providers (AWS, Azure) hold dominant market shares in enterprise SCADA/MES and cloud IoT infrastructure. However, the ecosystem remains highly diverse with specialized edge computing vendors (Litmus) and rapid open-source innovation (Eclipse Foundation, Apache Software Foundation) filling key interoperability gaps.
+
+---
+
+## 💼 SaaS & Commercial Platforms 🏷️
+
+*Industrial IoT SaaS and cloud platform offerings sorted by company size (valuation / revenue).*
+
+| Platform 🚀 | Company Valuation / Revenue 🏢 | Starting Price 💵 | Free Tier Limit / Free Trial 🆓 | Core Strengths 💡 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS IoT SiteWise](https://aws.amazon.com/iot-sitewise/)** ☁️ | **~$1.8 Trillion** *(Amazon Market Cap)* | $0.15 / 10k messages | AWS Free Tier ($200 credits for 30 days) | Scalable AWS-native telemetry ingestion, asset hierarchy modeling, SiteWise Edge for local processing. |
+| **[Siemens MindSphere](https://www.siemens.com/)** 🏭 | **~$140 Billion** *(Siemens AG Market Cap)* | ~$300 / month *(Insights Hub Starter)* | 30-day free trial with basic telemetry assets | Connects factory equipment natively to Siemens Xcelerator industrial enterprise cloud ecosystem. |
+| **[GE Digital Predix](https://www.ge.com/digital/)** ⚡ | **~$200 Billion** *(GE Aerospace Market Cap)* | ~$2,000 / month *(Enterprise)* | Demo account / 30-day trial upon sales request | Enterprise asset performance management (APM) and predictive maintenance analytics for heavy industry. |
+| **[Rockwell FactoryTalk](https://www.rockwellautomation.com/)** ⚙️ | **~$30 Billion** *(Rockwell Market Cap)* | ~$1,200 / year *(Per Node)* | 30-day trial for select software modules | Deep integration with Allen-Bradley PLCs, ControlLogix, and factory automation networks. |
+| **[PTC ThingWorx](https://www.ptc.com/en/products/thingworx)** 🌐 | **~$21 Billion** *(PTC Market Cap)* | Quote-based (~$10,000 / year base) | No public free trial (sales-assisted POC available) | End-to-end industrial IoT app development platform with Kepware protocol integration. |
+| **[AVEVA Insight](https://www.aveva.com/)** 📊 | **~$12 Billion** *(Acquired by Schneider Electric)* | ~$250 / user / month | 45-day unlimited feature free trial | Cloud-based operational intelligence, SCADA visualization, and process engineering analytics. |
+| **[Cognite Data Fusion](https://www.cognite.com/)** 🧠 | **~$1.6 Billion** *(Valuation)* | Quote-based (~$2,500 / month base) | 30-day developer trial sandbox | Industrial DataOps platform for contextualizing complex engineering data and 3D digital twins. |
+| **[Uptake](https://www.uptake.com/)** 🔮 | **~$1.0 Billion** *(Valuation)* | Quote-based (~$1,500 / month base) | No free tier (custom pilot program available) | AI-driven equipment health monitoring and failure prediction for energy and heavy transportation. |
+| **[Sight Machine](https://sightmachine.com/)** 🤖 | **~$300 Million** *(Estimated Valuation)* | Quote-based (~$3,000 / month base) | Sales-led demo and custom POC | Real-time manufacturing data foundation converting plant-floor data into operational insights. |
+| **[Litmus Edge](https://litmus.io/)** 🔌 | **~$100 Million** *(Funding / Valuation)* | $1,500 / month *(Foundation Plan)* | **Litmus Edge Developer Edition** (Free forever; full features, 2-hour session reset) | 250+ pre-built industrial drivers, edge normalization, and store-and-forward MQTT connectivity. |
+
+---
+
+## 🔓 Open-Source GitHub Projects 🛠️
+
+*Popular open-source frameworks, protocol adapters, and databases sorted by stargazer popularity.*
+
+### ⏱️ Time-Series & Data Storage
+
+- **[InfluxDB](https://github.com/influxdata/influxdb)** [![Stars](https://img.shields.io/github/stars/influxdata/influxdb?style=social&color=white)](https://github.com/influxdata/influxdb/stargazers) ⚡  
+  **Leading open-source time-series database**, MIT licensed. Features Flux and SQL query engines, real-time downsampling, and automated data retention policies. **Best for industrial observability and telemetry data**.
+
+- **[TDengine](https://github.com/taosdata/TDengine)** [![Stars](https://img.shields.io/github/stars/taosdata/TDengine?style=social&color=white)](https://github.com/taosdata/TDengine/stargazers) 🚀  
+  **High-performance time-series data platform**, AGPL-3.0 licensed. Designed for IoT scale with built-in caching, stream processing, and ultra-high data compression ratios. **Best for high-volume sensor telemetry**.
+
+- **[TimescaleDB](https://github.com/timescale/timescaledb)** [![Stars](https://img.shields.io/github/stars/timescale/timescaledb?style=social&color=white)](https://github.com/timescale/timescaledb/stargazers) 🐘  
+  **PostgreSQL-native time-series database**, Apache-2.0 / Timescale License. Provides hypertables and SQL hyperfunctions while preserving full relational joins. **Best for teams with existing SQL workflows**.
+
+- **[Apache IoTDB](https://github.com/apache/iotdb)** [![Stars](https://img.shields.io/github/stars/apache/iotdb?style=social&color=white)](https://github.com/apache/iotdb/stargazers) 🌴  
+  **IoT-native time-series database**, Apache-2.0 licensed. Offers ultra-high ingestion throughput and tree-structured metadata management for industrial asset hierarchies. **Best for edge-to-cloud industrial time-series storage**.
+
+### 🔄 Workflow & Edge Automation
+
+- **[Node-RED](https://github.com/node-red/node-red)** [![Stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) 🔴  
+  **Low-code programming for event-driven applications**, JS Foundation managed. Connects hardware devices, industrial APIs, and cloud services via a visual browser-based flow editor. **Best for rapid edge prototyping and OT/IT integration**.
+
+- **[EdgeX Foundry](https://github.com/edgexfoundry/edgex-go)** [![Stars](https://img.shields.io/github/stars/edgexfoundry/edgex-go?style=social&color=white)](https://github.com/edgexfoundry/edgex-go/stargazers) 🧱  
+  **Vendor-neutral IoT edge computing framework**, Apache-2.0 licensed (Linux Foundation project). Microservices architecture dual-interfacing edge sensors to IT/cloud infrastructure. **Best for standardized edge gateway deployments**.
+
+- **[Apache StreamPipes](https://github.com/apache/streampipes)** [![Stars](https://img.shields.io/github/stars/apache/streampipes?style=social&color=white)](https://github.com/apache/streampipes/stargazers) 🚰  
+  **Self-service industrial IoT toolbox**, Apache-2.0 licensed. Enables non-technical domain experts to connect, analyze, and explore IIoT data streams using a drag-and-drop pipeline editor. **Best for citizen data scientists in manufacturing**.
+
+### 🔌 Protocol Adapters & SCADA Integration
+
+- **[open62541](https://github.com/open62541/open62541)** [![Stars](https://img.shields.io/github/stars/open62541/open62541?style=social&color=white)](https://github.com/open62541/open62541/stargazers) 🔌  
+  **Open-source C implementation of OPC UA (IEC 62541)**, MPL-2.0 licensed. Embedded-friendly client/server library with PubSub support. **Best for native C/C++ embedded OPC UA integration**.
+
+- **[Apache PLC4X](https://github.com/apache/plc4x)** [![Stars](https://img.shields.io/github/stars/apache/plc4x?style=social&color=white)](https://github.com/apache/plc4x/stargazers) 🧩  
+  **Universal industrial protocol adapter suite**, Apache-2.0 licensed. Provides a unified API for communicating with Modbus, Siemens S7, OPC UA, EtherNet/IP, BACnet, and Profinet. **The standard open-source library for multi-protocol PLC extraction**.
+
+- **[Eclipse Kura](https://github.com/eclipse-kura/kura)** [![Stars](https://img.shields.io/github/stars/eclipse-kura/kura?style=social&color=white)](https://github.com/eclipse-kura/kura/stargazers) 🎛️  
+  **OSGi-based edge gateway framework**, EPL-2.0 licensed. Manages field connectivity (Modbus, OPC UA) and cloud interfaces via a modular Java runtime. **Best for enterprise IoT edge gateways**.
+
+- **[Eclipse Hono](https://github.com/eclipse-hono/hono)** [![Stars](https://img.shields.io/github/stars/eclipse-hono/hono?style=social&color=white)](https://github.com/eclipse-hono/hono/stargazers) 📡  
+  **Large-scale device messaging platform**, EPL-2.0 licensed. Normalizes device connectivity over MQTT, AMQP, CoAP, and HTTP for downstream telemetry microservices. **Best for massive multi-tenant device connectivity**.
+
+- **[Eclipse Dataspace Connector (EDC)](https://github.com/eclipse-edc/Connector)** [![Stars](https://img.shields.io/github/stars/eclipse-edc/Connector?style=social&color=white)](https://github.com/eclipse-edc/Connector/stargazers) 🔐  
+  **Sovereign data sharing connector**, Apache-2.0 licensed. Implements International Data Spaces (IDS) and Gaia-X standards for trustful cross-organizational industrial data exchange. **Best for secure dataspace compliance**.
+
+### 🏢 Digital Twin & Asset Modeling Frameworks
+
+- **[Eclipse Ditto](https://github.com/eclipse-ditto/ditto)** [![Stars](https://img.shields.io/github/stars/eclipse-ditto/ditto?style=social&color=white)](https://github.com/eclipse-ditto/ditto/stargazers) 👯  
+  **Production-grade Digital Twin abstraction framework**, EPL-2.0 licensed. Mirrors physical devices into stateful digital twin objects accessible via uniform REST/WebSocket APIs. **Best for enterprise digital twin state abstraction**.
+
+- **[OpenTwins](https://github.com/ertis-research/opentwins)** [![Stars](https://img.shields.io/github/stars/ertis-research/opentwins?style=social&color=white)](https://github.com/ertis-research/opentwins/stargazers) 🖼️  
+  **Next-generation 3D Digital Twin framework**, Apache-2.0 licensed. Integrates real-time 3D visualization (Three.js), Flink stream processing, and predictive ML models for smart plants. **Best for interactive 3D digital twins**.
+
+- **[ThingSPIN](https://github.com/thingspin/thingspin)** [![Stars](https://img.shields.io/github/stars/thingspin/thingspin?style=social&color=white)](https://github.com/thingspin/thingspin/stargazers) 🌀  
+  **NGSI-LD compliant Digital Twin platform**, open-source. Converts OPC UA data models to NGSI-LD semantic structures with RabbitMQ and Kafka messaging. **Best for semantic graph-based digital twins**.
+
+---
+
+## 🤝 How to Contribute 🛠️
+
+1. 🍴 Fork this repository.
+2. 📝 Add or update entries in `README.md` following the standard table/list format.
+3. 🔗 Ensure all links lead directly to official product documentation or original GitHub repositories.
+4. 📬 Submit a Pull Request with a short description of your addition.
+
+---
+
+## ⚠️ Disclaimer & Operational Safety 🔒
+
+- 🛡️ **OT Network Isolation**: Industrial control networks (ICS/SCADA) contain critical physical assets. Never expose PLC interfaces or raw industrial protocols directly to the public Internet without VPNs, zero-trust gateways, or IEC 62443 security zones.
+- 📜 **Licensing Rules**: Verify software licensing (Apache-2.0, EPL-2.0, AGPL-3.0, MIT) before deploying open-source components inside proprietary manufacturing networks.
+
+---
+
+<p align="center">
+  <b>⭐ Star this repository if you find it useful for your Industrial IoT architecture! ⭐</b>
+</p>

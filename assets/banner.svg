@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Dark Tech Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#071527" />
+      <stop offset="100%" stop-color="#0d1b2a" />
+    </linearGradient>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="accent-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e676" />
+      <stop offset="100%" stop-color="#1de9b6" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#7928ca" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+      <circle cx="40" cy="40" r="1.5" fill="#00f2fe" fill-opacity="0.15" />
+    </pattern>
+
+    <!-- Pulsing Node Style -->
+    <style>
+      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #94a3b8; }
+      .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 12px; fill: #00f2fe; }
+      
+      @keyframes pulse-wave {
+        0% { stroke-dashoffset: 1000; opacity: 0.2; }
+        50% { opacity: 0.8; }
+        100% { stroke-dashoffset: 0; opacity: 0.2; }
+      }
+      @keyframes float-node {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes glow-pulse {
+        0% { r: 4px; opacity: 0.5; }
+        50% { r: 8px; opacity: 1; }
+        100% { r: 4px; opacity: 0.5; }
+      }
+
+      .animated-line {
+        stroke-dasharray: 20 10;
+        animation: pulse-wave 12s linear infinite;
+      }
+      .node-float {
+        animation: float-node 4s ease-in-out infinite;
+      }
+      .pulse-dot {
+        animation: glow-pulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)" />
+  <rect width="1200" height="320" rx="16" fill="url(#grid)" />
+  <rect width="1200" height="320" rx="16" fill="url(#glow-grad)" />
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="none" stroke="#00f2fe" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- DYNAMIC BACKGROUND GRAPHICS (Behind Text) -->
+  <g opacity="0.25">
+    <!-- Factory / IoT Circuit Connection Lines -->
+    <path d="M 100 260 L 250 260 L 320 200 L 450 200 L 520 270 L 700 270" stroke="url(#accent-cyan)" stroke-width="2" fill="none" class="animated-line" />
+    <path d="M 750 60 L 880 60 L 950 120 L 1100 120" stroke="url(#accent-green)" stroke-width="2" fill="none" class="animated-line" />
+    <path d="M 800 280 L 920 280 L 1020 180 L 1120 180" stroke="#7928ca" stroke-width="2" fill="none" class="animated-line" />
+
+    <!-- Circuit Nodes -->
+    <circle cx="320" cy="200" r="5" fill="#00f2fe" class="pulse-dot" />
+    <circle cx="520" cy="270" r="5" fill="#00f2fe" class="pulse-dot" />
+    <circle cx="950" cy="120" r="5" fill="#00e676" class="pulse-dot" />
+    <circle cx="1020" cy="180" r="5" fill="#7928ca" class="pulse-dot" />
+  </g>
+
+  <!-- Side Floating Tech Badges (Decorative, RHS) -->
+  <g class="node-float" transform="translate(920, 65)" opacity="0.85">
+    <rect width="210" height="42" rx="8" fill="#0e2238" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="24" cy="21" r="6" fill="#00e676" />
+    <text x="40" y="26" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">MQTT &amp; OPC UA</text>
+  </g>
+
+  <g class="node-float" transform="translate(860, 135)" opacity="0.85" style="animation-delay: 1.5s;">
+    <rect width="230" height="42" rx="8" fill="#0e2238" stroke="#4facfe" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="24" cy="21" r="6" fill="#00f2fe" />
+    <text x="40" y="26" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Digital Twin Abstraction</text>
+  </g>
+
+  <g class="node-float" transform="translate(900, 205)" opacity="0.85" style="animation-delay: 2.5s;">
+    <rect width="220" height="42" rx="8" fill="#0e2238" stroke="#7928ca" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="24" cy="21" r="6" fill="#ab47bc" />
+    <text x="40" y="26" font-family="sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Time-Series &amp; Asset Models</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT (Title, Subtitle, Tags) -->
+  <!-- Category Tag -->
+  <g transform="translate(60, 48)">
+    <rect width="260" height="28" rx="14" fill="#00f2fe" fill-opacity="0.1" stroke="#00f2fe" stroke-opacity="0.3" />
+    <text x="14" y="18" class="badge-text">⚡ AWESOME INDUSTRIAL IOT ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="60" y="125" class="title" font-size="38" letter-spacing="-0.5">Industrial IoT Data Collection</text>
+  <text x="60" y="170" class="title" font-size="38" letter-spacing="-0.5" fill="url(#accent-cyan)">&amp; Asset Modeling</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="215" class="subtitle" font-size="16">
+    <tspan x="60" dy="0">Curated landscape of Enterprise SaaS Platforms &amp; Open-Source Frameworks</tspan>
+    <tspan x="60" dy="24">for PLC Telemetry, OPC UA Integration, Digital Twins, and Unified Namespaces.</tspan>
+  </text>
+
+  <!-- Pill Tags at Bottom -->
+  <g transform="translate(60, 265)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="100" height="24" rx="12" fill="#1e293b" />
+    <text x="50" y="16" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">🏭 SCADA / PLC</text>
+
+    <!-- Tag 2 -->
+    <rect x="110" y="0" width="115" height="24" rx="12" fill="#1e293b" />
+    <text x="167" y="16" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">🌐 Edge Gateways</text>
+
+    <!-- Tag 3 -->
+    <rect x="235" y="0" width="110" height="24" rx="12" fill="#1e293b" />
+    <text x="290" y="16" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">📊 Time-Series DB</text>
+
+    <!-- Tag 4 -->
+    <rect x="355" y="0" width="125" height="24" rx="12" fill="#1e293b" />
+    <text x="417" y="16" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">💎 Sparkplug B / UNS</text>
+  </g>
+</svg>
