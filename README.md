@@ -4,9 +4,11 @@
 
 # 🏭 Awesome Industrial IoT Data Collection & Asset Modeling 🚀
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesome-eAwesome-Awesome)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![IIoT Ecosystem](https://img.shields.io/badge/IIoT-Ecosystem-00f2fe.svg)](https://github.com/ishandutta2007/Awesome-Industrial-IoT-Data-Collection-Modeling)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 A curated list of **commercial SaaS platforms** and **open-source GitHub software** for **Industrial IoT (IIoT)** data acquisition, PLC/SCADA telemetry extraction, hierarchical asset modeling, Digital Twins, and Unified Namespace (UNS) architectures.
 
@@ -21,7 +23,9 @@ A curated list of **commercial SaaS platforms** and **open-source GitHub softwar
   - [🔌 Protocol Adapters & SCADA Integration](#-protocol-adapters--scada-integration)
   - [🏢 Digital Twin & Asset Modeling Frameworks](#-digital-twin--asset-modeling-frameworks)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [⚠️ Disclaimer & Operational Safety](#%EF%B8%8F-disclaimer--operational-safety)
+- [⭐ Star History](#-star-history)
 
 ---
 
@@ -120,6 +124,18 @@ A curated list of **commercial SaaS platforms** and **open-source GitHub softwar
 
 ---
 
+## 💖 Support & Sponsorship ☕
+
+Thank you for exploring this project! If you find this curated list of Industrial IoT tools, protocol adapters, and digital twin platforms helpful, please consider supporting the maintenance and growth of this resource:
+
+- ⭐ **Star this repository** to increase its visibility for fellow OT/IT engineers.
+- 🔀 **Fork and Share** it with your industrial automation community and colleagues.
+- ☕ **Sponsor the developer** or buy a coffee via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+Your support is greatly appreciated! 🙌
+
+---
+
 ## ⚠️ Disclaimer & Operational Safety 🔒
 
 - 🛡️ **OT Network Isolation**: Industrial control networks (ICS/SCADA) contain critical physical assets. Never expose PLC interfaces or raw industrial protocols directly to the public Internet without VPNs, zero-trust gateways, or IEC 62443 security zones.
@@ -127,6 +143,11 @@ A curated list of **commercial SaaS platforms** and **open-source GitHub softwar
 
 ---
 
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Industrial-IoT-Data-Collection-Modeling&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Industrial-IoT-Data-Collection-Modeling&type=date&legend=top-left)
+
 <p align="center">
   <b>⭐ Star this repository if you find it useful for your Industrial IoT architecture! ⭐</b>
 </p>
+
